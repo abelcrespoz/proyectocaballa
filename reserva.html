@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- servidor icono -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+
+    <!-- normal.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-reserva.css">
+    <!-- a.js -->
+    <title>Reservas</title>
+</head>
+<body>
+    <header>
+        <div class="cajaEnlacelogo">
+            <a href="index.html">
+                <img src="img/logo-1.png" alt="logo-cabaña" class="logo">
+            </a>
+        </div>
+        <p class="anuncionTelefono">Llámenos para hacer una reservación o un pedido al:
+        </p>
+        <a href="tel:+0912345678" class="enlaceTelefono">
+            <i class="fas fa-phone-alt"aria-label="telefono-cabaña"></i>
+            +0912345678
+        </a>
+
+        <nav>
+            <a href="index.html" class="inicio">INICIO</a>
+            <a href="menu.html" class="menu">MENÚ</a>
+            <a href="sobreNosotros.html" class="sobreNosotros">SOBRE NOSOTROS</a>
+            <a href="reserva.html" class="reservas">RESERVAS</a>
+            <a href="contacto.html" class="contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- contenido -->
+        <div class="contenido">
+            <section>
+                <h1>RESERVACIÓN</h1>
+                <section>
+                        <p>Nombre</p>
+                        <input type="text" title="Nombre de la persona que va a reservar" placeholder="Ej: Abel Alexander">
+                        <p>Apellido</p>
+                        <input type="text" title="Apellido de la persona que va a reservar" placeholder="Ej: Crespo Zambrano">
+                        <p>Dia</p>
+                        <input type="date" title="Dia de la reservacion" class="input-dia">
+                        <p>Hora</p>
+                        <input type="time" title="Hora de la reservacion" class="input-hora">
+                        <p>Correo</p>
+                        <input type="email" title="Correo de la persona que va a reservar" placeholder="Ej: @gmail.com">
+
+
+
+
+                        <!-- <form action="inicio.html">
+                            https://www.htmlquick.com/es/reference/tags/input-text.html
+                        </form> -->
+                            <p>Numero de persona</p>
+                            <input type="number" title="Cantidad de asientos" class="input-numeroPersona" placeholder="5">
+                            <p>$0.00</p>
+                            <button  title="Valor a calcular">Calcular</button>
+                        
+
+
+                        <p>Medio de pago</p>
+                        <!-- icono -->
+                        <details>
+                            <summary>
+                                <!-- icono -->
+                                <i class="far fa-credit-card" title="Metodo De Pago"></i>
+                            </summary>
+
+
+
+
+                            <p>Numero de la tarjeta
+                                <div>
+                                    <input type="text" title="Casilla 1" class="input-casilla ic1" size="4" maxlength="4" placeholder="0000">
+                                    <input type="text" title="Casilla 2" class="input-casilla ic2" size="4" maxlength="4" placeholder="0000">
+                                    <input type="text" title="Casilla 3" class="input-casilla ic3" size="4" maxlength="4" placeholder="0000">
+                                    <input type="text" title="Casilla 4" class="input-casilla ic4" size="4" maxlength="4" placeholder="0000">
+                                    </div>
+                            </p>
+
+
+
+                            <p>Nombre del titular de la tarjeta</p>
+                            <input type="text" title="Nombre del titular de la tarjeta" placeholder="Ej: Abel Crespo">
+                            <p>Fecha de expiración</p>
+                            <input type="date" title="Fecha de expiración de la tarjeta" class="input-fechaExpiracionTarjeta">
+                            <p>CVC</p>
+                            <input type="text" title="CVC de la tarjeta" class="input-cvc" size="4" maxlength="4" placeholder="1234">
+                            <button class="button-confirmar">Confirmar</button>
+                        </details>
+
+
+
+
+
+
+
+
+
+
+                        <div class="div-detalle">
+                            <p>Detalle</p>
+                            <textarea name="precise" cols="40" rows="4" class="detalle" placeholder="Especificación:"></textarea>
+                            <button>Reserva</button>
+                        </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" aria-label="twitter" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com/elencantodelmar/" aria-label="instagram" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="mapaSitio.html" class="mapaSitio">Mapa del Sitio</a>
+        <p>
+            Cabaña &#169 2021. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
