@@ -1,0 +1,70 @@
+#carrusel {
+    float:left;
+    /* este es el tamaño */
+    /* width:600px; */
+    /* ------------- */
+    width: 800px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-bottom:20px;
+}
+
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+
+.carrusel img {
+    cursor:pointer;
+}
+
+.product {
+    border:#CCCCCC 1px solid;
+}
+h4{
+    margin-top: 0px;
+}
+
+.subir-precio-detalle {
+    margin-top: -10px;
+}
+
+.img-carruselProducto:hover{
+    outline: 2px solid #F4D03F;
+}
+
+.left-arrow:hover{
+    box-shadow: none;
+    outline: 2px solid #F4D03F;
+}
+.right-arrow:hover{
+    box-shadow: none;
+    outline: 2px solid #F4D03F;
+}
