@@ -1,0 +1,39 @@
+main{background-color: #ffffff;}
+.contenido{
+    border-radius: 5px;
+    background-color: #afeeee;
+}
+section{
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #000000;
+    padding-bottom: 5px;
+}
+.img-menuPrincipal{
+    padding-top: 1.5%;
+    border-radius: 6% 6% 7px 7px;
+    display: block;
+    object-fit: cover;
+    /* width: 100%; */
+    width: 90%;
+    height: 400px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1{
+    width: 100%;
+    margin: 5px auto 0px auto;
+    text-align: center;
+}
+h2{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+
+
+
+
+
