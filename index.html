@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- servidor icono -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+
+    <!-- normal.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-inicio.css">
+    <!-- estilo del carrusel de inicio imagenes -->
+    <link rel="stylesheet" href="css/carrouseInicio-imagen.css">
+    <!-- ------ -->
+    <!-- estilos del carrusel en css -->
+    <link rel="stylesheet" href="css/Carrouse-productosl.css">
+    <!-- ---------- -->
+
+
+
+    <!-- a.js -->
+    <!-- caja de comentario -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="WalswwkQ"></script>
+    <!-- ------------------ -->
+
+
+
+
+
+
+    <!-- funcionalida del carrusel en js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/Carrouse-productosl.js"></script>
+    <script>carusel();</script>
+    <!-- ------------------------------- -->
+    <!-- /js -->
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="cajaEnlacelogo">
+            <a href="index.html">
+                <img src="img/logo-1.png" alt="logo-cabaña" class="logo">
+            </a>
+        </div>
+        <p class="anuncionTelefono">Llámenos para hacer una reservación o un pedido al:
+        </p>
+        <a href="tel:+0912345678" class="enlaceTelefono">
+            <i class="fas fa-phone-alt"aria-label="telefono-cabaña"></i>
+            +0912345678
+        </a>
+
+        <nav>
+            <a href="index.html" class="inicio">INICIO</a>
+            <a href="menu.html" class="menu">MENÚ</a>
+            <a href="sobreNosotros.html" class="sobreNosotros">SOBRE NOSOTROS</a>
+            <a href="reserva.html" class="reservas">RESERVAS</a>
+            <a href="contacto.html" class="contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- contenido -->
+        <div class="contenido">
+            <!-- galerria principal -->
+            <!-- <br> -->
+            <div class="container-slider" id="div-galeriaPrincipal">
+                <div class="slider" id="slider">
+                    <!-- imagen -->
+                    <div class="slider__section">
+                        <img src="img/sobreNosotros/7.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/producto/arrozMarinero.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/sobreNosotros/14.jpeg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/producto/arroz.jpeg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/sobreNosotros/3.jpeg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/sobreNosotros/4.jpeg" alt="" class="slider__img">
+                    </div>
+                    <!-- ------ -->
+                </div>
+                <!-- botones -->
+                <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+                <!-- ------- -->
+            </div>
+            <!-- carrouse imagen inicio -->
+            <script src="js/carrouseInicio-imagen.js"></script>
+            <!-- ------ -->
+            <!-- ------------------ -->
+            <section>
+                <br>
+                <h1>
+                    <i>EL ENCANTO DEL MAR CABAÑA RESTAURANTE BAR</i>
+                </h1>
+                <br>
+                <br>
+                <h2>
+                    <i>Verdadero deleite al paladar, pues se trata del verdadero sabor del Ecuador en palmar nuestro ambiente, comidas bebidas y música te trasladará inmediatamente al corazón mismo de Ecuador!</i>
+                </h2>
+                <div>
+                    <h3 id="carruselProducto">Producto</h3>
+                    <!-- carrusel de producto -->
+                    <div id="carrusel">
+                        <!-- fecha para cambiar la imagen de derecha a izquierda -->
+                        <a href="#" class="left-arrow"><img src="img/images/left-arrow.png"/></a>
+                        <a href="#" class="right-arrow"><img src="img/images/right-arrow.png"/></a>
+                        <div class="carrusel">
+                            <div class="product" id="product_0">
+                                <a href="img/producto/sopaDeCangrejo.jpg" aria-label="imagen sopa de cangrejo" target="_blank">
+                                    <img src="img/producto/sopaDeCangrejo.jpg" width="195" height="100" title="sopa de cangrejo" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Sopa de Cangrejo</h4>
+                                <p class="subir-precio-detalle">4.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <div class="product" id="product_1">
+                                <a href="img/producto/sopaDeCamaron.jpg" aria-label="imagen sopa de camaron" target="_blank">
+                                    <img src="img/producto/sopaDeCamaron.jpg" width="195" height="100" title="sopa de camaron" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Sopa de Camaron</h4>
+                                <p class="subir-precio-detalle">2.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <div class="product" id="product_2">
+                                <a href="img/producto/pescadoFrito.jpeg" aria-label="imagen pescado frito" target="_blank">
+                                    <img src="img/producto/pescadoFrito.jpeg" width="195" height="100" title="pescado frito" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Pescado Frito</h4>
+                                <p class="subir-precio-detalle">3.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <div class="product" id="product_3">
+                                <a href="img/producto/chuletaAsada.jpg" aria-label="imagen chuleta asada" target="_blank">
+                                    <img src="img/producto/chuletaAsada.jpg" width="195" height="100" title="chuleta asada" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Chuleta Asada</h4>
+                                <p class="subir-precio-detalle">3.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <div class="product" id="product_4">
+                                <a href="img/producto/camaronesApanados.jpg" aria-label="imagen camarones apanados" target="_blank">
+                                    <img src="img/producto/camaronesApanados.jpg" width="195" height="100" title="camarones apanados" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Camarones Apanados</h4>
+                                <p class="subir-precio-detalle">3.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <div class="product" id="product_5">
+                                <a href="img/producto/caldoBolasDeCarne.jpg" aria-label="imagen caldo de bolas de carne" target="_blank">
+                                    <img src="img/producto/caldoBolasDeCarne.jpg" width="195" height="100" title="caldo de bolas de carne" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Caldo de Bolas de Carne</h4>
+                                <p class="subir-precio-detalle">2.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                            <!-- fue lo que implemete -->
+                            <div class="product" id="product_6">
+                                <a href="img/producto/arrozMarinero.jpg" aria-label="imagen arroz marinero" target="_blank">
+                                    <img src="img/producto/arrozMarinero.jpg" width="195" height="100" title="arroz marinero" class="img-carruselProducto"/>
+                                </a>
+                                <h4>Arroz Marinero</h4>
+                                <p class="subir-precio-detalle">"4.00 $</p>
+                                <button class="subir-precio-detalle">Detalle</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- -->
+                </div>
+                <!-- comentario -->
+                <div class="div-comentario" id="div-comentario">
+                        <i class="far fa-comment-dots div-comentarioTitulo" aria-label="comentario"></i>
+                        <h3 class="div-comentarioTitulo">Comentario</h3>
+                    <button class="button-comentario">
+                        <details>
+                            <summary>
+                                <p class="summary-comentario">Mostrar Comentarios</p>
+                                <i class="fas fa-angle-down summary-comentario"></i>
+                            </summary>
+                            <!-- caja de comentario -->
+                            <div class="fb-comments" data-href="https://abelcrespoz.github.io/proyectocaballa/index.html"   data-width="" data-numposts="5"></div>
+                            <!-- ------------------ -->
+                        </details>
+                    </button>
+                </div>
+                <!-- ----------- -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" aria-label="twitter" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com/elencantodelmar/" aria-label="instagram" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="mapaSitio.html" class="mapaSitio">Mapa del Sitio</a>
+        <p>
+            EL ENCANTO DEL MAR &#169 2021. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
