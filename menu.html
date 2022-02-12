@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- servidor icono -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+
+    <!-- normal.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style-menu.css">
+    <link rel="stylesheet" href="css/fondo.css">
+
+    <!-- menu flotante en css -->
+    <link rel="stylesheet" href="css/styles-menuFlotante.css">
+    <!-- /css -->
+
+    <!-- js -->
+    <!-- funcionalida de la menu flotante -->
+    <script src="js/menuFlotante.js"></script>
+    <!-- -------------------------------- -->
+    <!-- /js -->
+    <title>Menú</title>
+</head>
+<body>
+    <header>
+        <div class="cajaEnlacelogo">
+            <a href="index.html">
+                <img src="img/logo-1.png" alt="logo-cabaña" class="logo">
+            </a>
+        </div>
+        <p class="anuncionTelefono">Llámenos para hacer una reservación o un pedido al:
+        </p>
+        <a href="tel:+0912345678" class="enlaceTelefono">
+            <i class="fas fa-phone-alt"aria-label="telefono-cabaña"></i>
+            +0912345678
+        </a>
+
+        <nav>
+            <a href="index.html" class="inicio">INICIO</a>
+            <a href="menu.html" class="menu">MENÚ</a>
+            <a href="sobreNosotros.html" class="sobreNosotros">SOBRE NOSOTROS</a>
+            <a href="reserva.html" class="reservas">RESERVAS</a>
+            <a href="contacto.html" class="contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- fondo-1 -->
+        <video src="video/f2.mp4" autoplay loop muted class="videof" no-controls poster="img/images/poster2.PNG"></video>
+        <!-- /fondo-1  -->
+
+        <!-- contenido -->
+        <div class="contenido">
+            <br>
+            <img src="img/producto/arroz.jpeg" alt="" class="img-menuPrincipal">
+            <section>
+                <br>
+                <h1 id="loMasPopular">
+                    <i>¿QUÉ ES POPULAR?</i>
+                </h1>
+                <br>
+                <h2>
+                    <i>La elección más popular de los clientes</i>
+                </h2>
+                <!-- los producto mas populares, 4 producto -->
+                <div id="carrusel">
+                    <div class="carrusel">
+                        <div class="product" id="product_0">
+                            <img src="img/producto/arrozMarinero.jpg" alt="">
+                            <h4>Menu #1</h4>
+                            <div class="div-estrellas1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <!-- ventana flotante button -->
+                            <button class="subir-precio-detalle" onclick="javascript:abrir(1)">Detalle</button>
+                            <!-- ----------------------- -->
+
+                        </div>
+                        <div class="product" id="product_1">
+                            <img src="img/producto/camaronesApanados.jpg" alt="">
+                            <h4>Menu #2</h4>
+                            <div class="div-estrellas1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <!-- ventana flotante button -->
+                            <button class="subir-precio-detalle" onclick="javascript:abrir(2)">Detalle</button>
+                            <!-- ----------------------- -->
+
+                        </div>
+                        <div class="product" id="product_2">
+                            <img src="img/producto/pescadoFrito.jpeg" alt="">
+                            <h4>Menu #3</h4>
+                            <div class="div-estrellas1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+
+                            <!-- ventana flotante button -->
+                            <button class="subir-precio-detalle" onclick="javascript:abrir(3)">Detalle</button>
+                            <!-- ----------------------- -->
+
+                        </div>
+                        <div class="product" id="product_3">
+                            <img src="img/producto/chuletaAsada.jpg" alt="">
+                            <h4>Menu #4</h4>
+                            <div class="div-estrellas1">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <!-- ventana flotante button -->
+                            <button class="subir-precio-detalle" onclick="javascript:abrir(4)">Detalle</button>
+                            <!-- ----------------------- -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ventana flotante top 1#-->
+                <div class="ventana" id="vent1">
+                    <div  class="cerrar">
+                        <a href="javascript:cerrar(1)" class="a-ventaFlotante"><img src="img/images/boton-cerrar.png" alt=""></a>
+                    </div>
+                    <!-- contenido de la pestaña flotante -->
+                    <div>
+                        <!-- imagen -->
+                        <img src="img/producto/arrozMarinero.jpg" alt="" class="div-imgPrincipal-ventanaFlotante">
+                    </div>
+                    <div>
+                        <!-- detalle del producto -->
+                        <h4>Arroz Marinero</h4>
+                        <div class="div-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>El arroz marinero o arroz con mariscos es un plato típico de varios países latinos, y en Ecuador es un plato tradicional de la Costa. El arroz marinero ecuatoriano se prepara con arroz, camarones, calamares, conchas, mejillones, ajo, cebolla, pimiento, cilantro y condimentos/especias.</p>
+                        <h5>Precio: 4.00 $</h5>
+                    </div>
+                </div>
+                <!-- /ventana flotante  -->
+
+                <!-- ventana flotante top 2#-->
+                <div class="ventana" id="vent2">
+                    <div  class="cerrar">
+                        <a href="javascript:cerrar(2)" class="a-ventaFlotante"><img src="img/images/boton-cerrar.png" alt=""></a>
+                    </div>
+                    <!-- contenido de la pestaña flotante -->
+                    <div>
+                        <!-- imagen -->
+                        <img src="img/producto/camaronesApanados.jpg" alt="" class="div-imgPrincipal-ventanaFlotante">
+                    </div>
+                    <div>
+                        <!-- detalle del producto -->
+                        <h4>Camarones Apanados</h4>
+                        <div class="div-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Camarones apanados es toda una tentación en la que definitivamente tenemos que caer. Los camarones son deliciosos, su textura crujiente y su agradable sabor los convierten en uno de los productos de mar preferidos de millones de personas.</p>
+                        <h5>Precio: 3.00 $</h5>
+                    </div>
+                </div>
+                <!-- /ventana flotante  -->
+
+                <!-- ventana flotante top 3#-->
+                <div class="ventana" id="vent3">
+                    <div  class="cerrar">
+                        <a href="javascript:cerrar(3)" class="a-ventaFlotante"><img src="img/images/boton-cerrar.png" alt=""></a>
+                    </div>
+                    <!-- contenido de la pestaña flotante -->
+                    <div>
+                        <!-- imagen -->
+                        <img src="img/producto/pescadoFrito.jpeg" alt="" class="div-imgPrincipal-ventanaFlotante">
+                    </div>
+                    <div>
+                        <!-- detalle del producto -->
+                        <h4>Pescado Frito</h4>
+                        <div class="div-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Nada como un pescado del mar a la mesa. Con arroz blanco, patacones , salsa de ají y  la clásica salsa de tomate con cebolla colorada, curtida con limón.</p>
+                        <h5>Precio: 3.00 $</h5>
+                    </div>
+                </div>
+                <!-- /ventana flotante  -->
+
+                <!-- ventana flotante top 4#-->
+                <div class="ventana" id="vent4">
+                    <div  class="cerrar">
+                        <a href="javascript:cerrar(4)" class="a-ventaFlotante"><img src="img/images/boton-cerrar.png" alt=""></a>
+                    </div>
+                    <!-- contenido de la pestaña flotante -->
+                    <div>
+                        <!-- imagen -->
+                        <img src="img/producto/chuletaAsada.jpg" alt="" class="div-imgPrincipal-ventanaFlotante">
+                    </div>
+                    <div>
+                        <!-- detalle del producto -->
+                        <h4>Chuleta Asada</h4>
+                        <div class="div-estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Arroz menestra de frejol, patacones, ensalada, ají, mayonesa</p>
+                        <h5>Precio: 3.00 $</h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" aria-label="twitter" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com/elencantodelmar/" aria-label="instagram" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="mapaSitio.html" class="mapaSitio">Mapa del Sitio</a>
+        <p>
+            EL ENCANTO DEL MAR &#169 2021. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>

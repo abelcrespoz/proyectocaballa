@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- servidor icono -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+
+    <!-- normal.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-reserva.css">
+    <link rel="stylesheet" href="css/fondo.css">
+    <title>Reservas</title>
+</head>
+<body>
+    <header>
+        <div class="cajaEnlacelogo">
+            <a href="index.html">
+                <img src="img/logo-1.png" alt="logo-cabaña" class="logo">
+            </a>
+        </div>
+        <p class="anuncionTelefono">Llámenos para hacer una reservación o un pedido al:
+        </p>
+        <a href="tel:+0912345678" class="enlaceTelefono">
+            <i class="fas fa-phone-alt"aria-label="telefono-cabaña"></i>
+            +0912345678
+        </a>
+
+        <nav>
+            <a href="index.html" class="inicio">INICIO</a>
+            <a href="menu.html" class="menu">MENÚ</a>
+            <a href="sobreNosotros.html" class="sobreNosotros">SOBRE NOSOTROS</a>
+            <a href="reserva.html" class="reservas">RESERVAS</a>
+            <a href="contacto.html" class="contacto">CONTACTO</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- fondo -->
+        <video src="video/f4.mp4" autoplay loop muted class="videof" no-controls poster="img/images/poster4.PNG"></video>
+        <!-- /fondo -->
+
+        <!-- contenido -->
+        <div class="contenido">
+            <section>
+                <h1 id="ingresoDatosPersonales">RESERVACIÓN</h1>
+                <section>
+                    <form id="formulario-consulta">
+                        <label>
+                            <p class="pformulario">Nombre Completo:</p>
+                            <input type="text" name="nombrePersona-reservar" id="nombrePersona-reservar" placeholder="Ej: Abel Alexander" required minlength="3" maxlength="30" pattern="([A-Z |a-z])*" title="Estimado usuario, por favor ingrese solo letras">
+                        </label>
+                        <label>
+                            <p class="pformulario">Apellido Completo:</p>
+                            <input type="text" name="apellidoPersona-reservar" id="apellidoPersona-reservar" placeholder="Ej: Crespo Zambrano" required minlength="3" maxlength="40" pattern="([A-Z |a-z])*" title="Estimado usuario, por favor ingrese solo letras">
+                        </label>
+                        <label>
+                            <p class="pformulario">Dia:</p>
+                            <input type="date" class="input-dia" name="dia-reservar" id="dia-reservar" required>
+                        </label>
+                        <label>
+                            <p class="pformulario">Hora:</p>
+                            <input type="time" class="input-hora" name="hora-reservar" id="hora-reservar" required>
+                        </label>
+                        <label>
+                            <p class="pformulario">Correo:</p>
+                            <input type="email" placeholder="Ej: @gmail.com" name="correoPersona-reservar" id="correoPersona-reservar" required pattern="[^@ \t\r\n]+@gmail\.com" title="Estimado usuario, por favor ingrese correctamente el dato solicitado: nombreCorreo@gmail.com">
+                        </label>
+                        <label>
+                            <label>
+                                <p class="pformulario">Cantidad de Asiento:</p>
+                                <input type="number" title="Cantidad de asientos" class="input-numeroPersona" placeholder="5" name="numeroPersona-reservar" id="numeroPersona-reservar" required min="1" max="40">
+                            </label>
+                            <p style="margin-right: 0%;" class="pformulario">$0.00</p>
+                            <!-- <button type="button" class="button-calcular">Calcular</button> -->
+                        </label>
+                        <label>
+                            <fieldset>
+                            <legend>
+                                <p style="border: 1px solid#000; padding-left: 5px; padding-right: 5px; padding-top: 2px; padding-bottom: 2px;" class="pformulario">Medio de Pago</p>
+                            </legend>
+                            <!-- icono -->
+                            <details>
+                                <summary>
+                                    <!-- icono -->
+                                    <i class="far fa-credit-card" title="Metodo De Pago" aria-label="metodo de pago" style="color: #AED6F1;"></i>
+                                </summary>
+                                <label>
+                                    <p class="pformulario">Numero de la Tarjeta:
+                                        <div>
+                                            <input type="text" class="input-casilla ic1" minlength="1" maxlength="4" placeholder="0000" name="numeroTarjeta-casilla1" id="numeroTarjeta-casilla1" required pattern="(\d){4}" title="Estimado usuario, por favor ingrese los cuatro digitos correctamente">
+                                            <input type="text" class="input-casilla ic2" minlength="1" maxlength="4" placeholder="0000" name="numeroTarjeta-casilla2" id="numeroTarjeta-casilla2" required pattern="(\d){4}" title="Estimado usuario, por favor ingrese los cuatro digitos correctamente">
+                                            <input type="text" class="input-casilla ic3" minlength="1" maxlength="4" placeholder="0000" name="numeroTarjeta-casilla3" id="numeroTarjeta-casilla3" required pattern="(\d){4}" title="Estimado usuario, por favor ingrese los cuatro digitos correctamente">
+                                            <input type="text" class="input-casilla ic4" minlength="1" maxlength="4" placeholder="0000" name="numeroTarjeta-casilla4" id="numeroTarjeta-casilla4"  required pattern="(\d){4}" title="Estimado usuario, por favor ingrese los cuatro digitos correctamente">
+                                        </div>
+                                    </p>
+                                </label>
+                                <label>
+                                    <p class="pformulario">Nombre del Titular de la Tarjeta:</p>
+                                    <input type="text" title="Nombre del titular de la tarjeta" placeholder="Nombre y Apellido" name="nombreTitularTarjeta-reservar" id="nombreTitularTarjeta-reservar" required minlength="3" maxlength="60" pattern="([A-Z |a-z])*" title="Estimado usuario, por favor ingrese solo letras">
+                                </label>
+                                <label>
+                                    <p class="pformulario">Fecha de expiración:</p>
+                                    <input type="date" class="input-fechaExpiracionTarjeta" name="fechaExpiracion-reservar" id="fechaExpiracion-reservar" required>
+                                </label>
+                                <label>
+                                    <p class="pformulario">CVC:</p>
+                                    <input type="text" class="input-cvc" minlength="1" maxlength="4" placeholder="1234" name="cvcTrajeta-reservar" id="cvcTrajeta-reservar" required pattern="(\d){4}" title="Estimado usuario, por favor ingrese los cuatro digitos correctamente">
+                                </label>
+                                <button type="button" class="button-confirmar">Confirmar</button>
+                            </details>
+                            </fieldset>
+                        </label>
+                        <label>
+                            <div class="div-detalle">
+                                <label>
+                                    <p class="pformulario">Detalle (opcional):</p>
+                                    <textarea cols="40" rows="4" class="detalle" placeholder="Especificación:" name="detalleEspecificacion-reservar" id="detalleEspecificacion-reservar"></textarea>
+                                </label>
+                                <!-- modificado -->
+                                <button type="submit" name="submit" value="Enviar Reservacion">Enviar Reservacion</button>
+                                <button type="reset" name="reset" value="Limpiar Formulario">Limpiar Formulario</button>
+                            </div>
+                        </label>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" aria-label="twitter" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com/elencantodelmar/" aria-label="instagram" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="mapaSitio.html" class="mapaSitio">Mapa del Sitio</a>
+        <p>
+            EL ENCANTO DEL MAR &#169 2021. Todos los derechos reservados.
+        </p>
+    </footer>
+</body>
+</html>
