@@ -1,0 +1,71 @@
+main{background-color: #ffffff;}
+.contenido{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+section{
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #000000;
+    padding-bottom: 5px;
+}
+.img-menuPrincipal{
+    border-radius: 15px;
+    display: block;
+    object-fit: cover;
+    width: 90%;
+    height: 400px;
+    max-width: 900px;
+    margin: auto;
+    border: solid 4px #fff;
+}
+
+h1{
+    width: 100%;
+    margin: 5px auto 0px auto;
+    text-align: center;
+    color: #ffffff;
+}
+h2{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    color: #AED6F1;
+}
+
+
+#carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 15px 20px 5px;
+}
+.carrusel>div {
+    float: left;
+    width: 195px;
+    text-align:center;
+    height: 203px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.carrusel img {
+    cursor:pointer;
+    width: 100%;
+    height: 55%;
+}
+.product{
+    border:#CCCCCC 1px solid;
+    margin: 7px 0px 7px 0px;
+}
+h4{
+    margin-top: 0px;
+    color: #2874A6;
+}
+.div-estrellas1{
+    margin-top: -12px;
+    color: #AED6F1;
+}
+button{
+    margin-top: 7px
+}

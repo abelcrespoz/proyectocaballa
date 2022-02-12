@@ -1,0 +1,63 @@
+h1{
+    display: block;
+    white-space: nowrap;
+    border-right: 0px solid;
+    width: 90%;
+    animation: typing 2.5s steps(100), blink .5s infinite step-end  alternate;
+    overflow: hidden;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    padding-top: 5px;
+    color: #fff;
+}
+h2{color: #AED6F1;}
+@keyframes typing{from{width: 0;}}
+@keyframes blink{50%{border-color: transparent;}}
+.contenido{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.section{
+    width: 38%;
+    margin-left: 7%;
+    color: #000000;
+}
+.art{width: 84%;}
+article{width: 170px; margin-left: 15px;}
+.enlaces{
+    color: #2874A6;
+    display: block;
+    text-decoration: none;
+}
+.enlaces:hover{
+    color: #2ECC71;
+    box-shadow: 0px 2px 0px #2ECC71;
+    /*linea de lado derecho, linea de abajo, sombra, colo */
+}
+.carruselProductos{width: 43%;}
+.comentarios{width: 28%;}
+.GaleriaPrincipal{width: 35%;}
+.catalogoProductos{width:43%;}
+.loMasPopular{width: 32%;}
+.descripcionLugar{width: 43%;}
+.descripcionPersonal{width: 42%;}
+.nosotros{width: 19%;}
+.ingresoDatosPersonales{width: 56%;}
+.direccion{width: 21%;}
+.horarioApertura{width: 35%;}
+.mapa{width: 13%;}
+.telefono{width: 19%;}
+.sect-inicio{margin-bottom: 20%;}
+.sect-menu{margin-bottom: 20%;}
+main{background-color: #ffffff;}
+.sect-reservas{
+    margin-bottom: 20%;
+    margin-top: -20%;
+}
+.section2{
+    width: 38%;
+    color: #000000;
+    float: left;
+    margin-left: 55%;
+    margin-top: -400px;
+}

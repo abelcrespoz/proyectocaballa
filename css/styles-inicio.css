@@ -1,0 +1,49 @@
+main{background-color: #ffffff;}
+.contenido{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+}
+section{
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #000000;
+    padding-bottom: 20px;
+}
+.container-slider{
+    border-radius: 15px;
+}
+h1{
+    width: 100%;
+    margin: 5px auto 0px auto;
+    text-align: center;
+    color: #ffffff;
+}
+h2{
+    width: 100%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    color: #AED6F1;
+}
+#carruselProducto{color: #5DADE2;}
+.button-comentario{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #777676;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.div-comentarioTitulo{
+    display: inline;
+    color: #5DADE2;
+}
+summary{
+    list-style: none;
+    height: 30px;
+}
+.summary-comentario{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+
